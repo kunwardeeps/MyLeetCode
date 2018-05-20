@@ -21,9 +21,9 @@ public class Problem1TwoSum {
 
     public static void main(String[] args) {
 
-        int[] input = new int[]{2, 7, 11, 15};
+        int[] input = new int[]{2,7,11,15};
         printArray(input);
-        int[] output = solution2(input, 9);
+        int[] output = solution1(input, 9);
         printArray(output);
 
     }
@@ -31,13 +31,19 @@ public class Problem1TwoSum {
     private static int[] solution1(int[] input, int target) {
         int[] out = new int[2];
         int r = input.length-1;
+        int[] origInput = new int[r+1];
+        System.arraycopy(input, 0, origInput, 0, r+1);
         QuickSort.sort(input, 0, r);
         int j = 0;
         for (int i=0; i<=r; i++){
             j = binarySearch(input, i+1, r, target - input[i]);
             if (j != -1){
-                out[0] = i;
-                out[1] = j;
+                int idx = 0;
+                for (int p=0; p<r+1; p++){
+                    if (input[j] == origInput[p] || input[j] == target - origInput[p]){
+                        out[idx++] = p;
+                    }
+                }
                 return out;
             }
         }
@@ -48,13 +54,13 @@ public class Problem1TwoSum {
         int mid = (l+r)/2;
         if (r >= l){
             if (input[mid] > number){
-                return binarySearch(input, l, mid, number);
+                return binarySearch(input, l, mid-1, number);
             }
             if (input[mid] == number){
                 return mid;
             }
             if (input[mid] < number){
-                return binarySearch(input, mid, r, number);
+                return binarySearch(input, mid+1, r, number);
             }
         }
         return -1;
