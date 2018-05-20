@@ -1,0 +1,64 @@
+package com.leetcode.algos;
+
+/*
+Pseudo code:
+
+quicksort(a):
+    q = partition(a,p,r) // q is pivot index in correct place
+    quicksort(a,p,q-1)
+    quicksort(a,q+1,r)
+
+partition(a,l,r):
+    pivot = a[r]
+    i=l-1
+    for (j = l to r-1):
+        if (a[j] > pivot):
+            i++
+            swap(a[i],a[j])
+    swap(a[i+1],pivot)
+    return i+1        
+*/
+public class QuickSort{
+
+    /* 
+     * a = input array
+     * l = left index
+     * r = right index
+     */
+    public static void sort(int[] a, int l, int r) {
+        if (l<r){
+            int pvtIdx = partition(a, l, r);
+            sort(a, l, pvtIdx-1);
+            sort(a, pvtIdx+1, r);
+        }
+        
+    }
+
+    private static int partition(int[] a, int l, int r) {
+        int pivot = a[r];
+        int i=l-1;
+        for (int j=0; j<=r-1; j++){
+            if (a[j]<pivot){
+                i++;
+                swap(a,i,j);
+            }
+        }
+        swap(a, i+1, r);
+        return i+1;
+    }
+
+	private static void swap(int[] a, int i, int j) {
+        int temp = a[j];
+        a[j] = a[i];
+        a[i] = temp;
+	}
+
+	public static void main(String[] args) {
+        int[] a = new int[] {2,7,1,6};
+        QuickSort.sort(a, 0, 3);
+        for (int i: a){
+            System.out.print(i+" ");
+        }
+    }
+
+}

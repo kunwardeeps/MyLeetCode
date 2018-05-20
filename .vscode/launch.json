@@ -6,6 +6,16 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Debug (Launch)-Quicksort",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.leetcode.algos.QuickSort",
+            "args": ""
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch)-Problem1TwoSum",
             "request": "launch",
             "cwd": "${workspaceFolder}",

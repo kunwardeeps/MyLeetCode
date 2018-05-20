@@ -1,4 +1,10 @@
 package com.leetcode.solutions;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.leetcode.algos.QuickSort;
+
 /*
  * Given an array of integers, return indices of the two numbers such that they add up to a specific target.
  *
@@ -17,18 +23,56 @@ public class Problem1TwoSum {
 
         int[] input = new int[]{2, 7, 11, 15};
         printArray(input);
-        int[] output = naiveSolution(input, 9);
+        int[] output = solution2(input, 9);
         printArray(output);
 
     }
 
     private static int[] solution1(int[] input, int target) {
         int[] out = new int[2];
+        int r = input.length-1;
+        QuickSort.sort(input, 0, r);
+        int j = 0;
+        for (int i=0; i<=r; i++){
+            j = binarySearch(input, i+1, r, target - input[i]);
+            if (j != -1){
+                out[0] = i;
+                out[1] = j;
+                return out;
+            }
+        }
         return out;
     }
 
-    private static int[] solution2(int[] input, int target) {
+    private static int binarySearch(int[] input, int l, int r, int number) {
+        int mid = (l+r)/2;
+        if (r >= l){
+            if (input[mid] > number){
+                return binarySearch(input, l, mid, number);
+            }
+            if (input[mid] == number){
+                return mid;
+            }
+            if (input[mid] < number){
+                return binarySearch(input, mid, r, number);
+            }
+        }
+        return -1;
+
+	}
+
+	private static int[] solution2(int[] input, int target) {
         int[] out = new int[2];
+        Map<Integer,Integer> map = new HashMap<>();
+        for (int i=0; i<input.length; i++){
+            if (map.containsKey(input[i])){
+                out[0] = map.get(input[i]);
+                out[1] = i;
+            }
+            else {
+                map.put(target - input[i], i);
+            }
+        }
         return out;
     }
 
