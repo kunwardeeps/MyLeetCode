@@ -5,9 +5,10 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+import javafx.geometry.Side;
+
 /**
  * Problem3:
- * 
  * Given a string, find the length of the longest substring without repeating characters.
 
 Examples:
@@ -21,35 +22,30 @@ Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer 
 public class Problem3 {
 
     public static void main(String[] args) {
-        String s = "dvdf";
-
-        String longest = "";
-        String substr = "";
+        String s = "abcd";
+        int length = s.length();
+        int max = 0;
         Set<Character> charSet = new HashSet<>();
+        for (int i=0; i<length; i++){
+            max = Math.max(max, getLength(s, i, length-1, charSet));
+        }
+        System.out.println(max);
+    }
 
-        int st=0;
-        int e=0;
-
-        for (e = 0; e < s.length(); e++ ){
-            if (charSet.contains(s.charAt(e))){
-                substr = s.substring(st,e);
-                if (substr.length() > longest.length()){
-                    longest = substr;
-                }
-                st = e;
-                charSet = new HashSet<>();
-                charSet.add(s.charAt(st));
+    private static int getLength(String input, int st, int end, Set<Character> charSet){
+        charSet.clear();
+        for (int i = st; i <= end; i++){
+            if (charSet.contains(input.charAt(i))){
+                return i-st;
+            }
+            else if (i == end){
+                return i-st+1;
             }
             else {
-                charSet.add(s.charAt(e));
+                charSet.add(input.charAt(i));
             }
         }
-
-        if (charSet.size()>longest.length()){
-            longest = s.substring(st,e);
-        }
-
-        System.out.println(longest);
+        return 1;//default
     }
     
 }
