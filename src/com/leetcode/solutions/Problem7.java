@@ -29,7 +29,7 @@ public class Problem7 {
 
     }
 
-	private static int solution1(int x) {
+	public static int solution1(int x) {
         int lastDig=0; 
         int rev=0;
         while (x!=0){
