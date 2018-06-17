@@ -1,5 +1,8 @@
 package com.leetcode.solutions;
 
+/**
+ * For O(n), refer https://leetcode.com/articles/longest-palindromic-substring/
+ */
 class Problem5{
     public static void main(String[] args) {
         System.out.println(longestPalindrome("babad").equals("bab"));
@@ -12,7 +15,55 @@ class Problem5{
     }
 
     public static String longestPalindrome(String s) {
-        return bruteForce(s);
+        return dynamic(s);
+    }
+
+    /** 
+     * O(n^2) solution
+     * dp[i][j] = Substring from index i to j (inclusive)
+     * dp[i][j] = true if dp[i+1][j-1] == true and s[i] == s[j]
+     */
+    private static String dynamic(String s){
+        int l = s.length();
+        boolean[][] dp = new boolean[l][l];
+        int longest=0;
+        String longestPalindrome = "";
+
+        //Unit length strings are palindrome
+        for (int i=0; i<l; i++){
+            dp[i][i] = true;
+            if (longest < 1){
+                longest = 1;
+                longestPalindrome = s.substring(0,1);
+            }
+        }
+
+        //For strings of length=2
+        for (int i=0; i<l-1; i++){
+            if (s.charAt(i) == s.charAt(i+1)){
+                dp[i][i+1] = true;
+                if (longest < 2){
+                    longest = 2;
+                    longestPalindrome = s.substring(i,i+2);
+                }
+            }
+        }
+
+        int k=0;
+        for (int i=3; i<=l; i++){//i = length of palindrome
+            for (int j=0; j+i<=l; j++){//js Start Index
+                k=j+i-1;//k=End Index
+                if (s.charAt(j) == s.charAt(k) && dp[j+1][k-1] == true){
+                    dp[j][k] = true;
+                    if (longest<i){
+                        longest = i;
+                        longestPalindrome = s.substring(j,k+1);
+                    }
+                }
+            }
+        }
+
+        return longestPalindrome;
     }
 
     private static String bruteForce(String s){
@@ -25,6 +76,7 @@ class Problem5{
                 if (isPalindrome(subst) && i+1>longest){
                     longestPalindrome = subst;
                     longest = i+1;
+                    break;
                 }
             }
         }
