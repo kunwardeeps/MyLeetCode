@@ -11,7 +11,7 @@ class Problem849{
     }
 
     public static int maxDistToClosest(int[] seats) {
-        int start=0, end=0, length=0, maxLength=0, i=0, l=seats.length;
+        int length=0, maxLength=0, i=0, l=seats.length;
         for (i=0; i<l; i++){
             if (seats[i] == 0){
                 length++;
