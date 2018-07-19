@@ -1,5 +1,8 @@
 package com.leetcode.solutions;
 
+/**
+ * https://leetcode.com/problems/zigzag-conversion/description/
+ */
 class Problem6{
     public static void main(String[] args) {
         System.out.println(solution1("PAYPALISHIRING", 2).equals("PYAIHRNAPLSIIG"));

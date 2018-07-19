@@ -9,6 +9,10 @@ class Problem4{
         System.out.println(findMedianSortedArrays(new int[]{1}, new int[]{2})==1.5);
     }
 
+    /**
+     * Approach:
+     * Merge sorted arrays then check if number of elements are odd or even.
+     */
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int m = nums1.length;
         int n = nums2.length;

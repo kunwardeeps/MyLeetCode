@@ -64,6 +64,9 @@ public class Problem3 {
         return max;
     }
 
+    /**
+     * Returns length of longest unique substring starting at st
+     */
     private static int getLength(String input, int st, int end, Set<Character> charSet){
         charSet.clear();
         for (int i = st; i <= end; i++){

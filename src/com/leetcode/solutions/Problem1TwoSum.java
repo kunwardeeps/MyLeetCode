@@ -28,6 +28,11 @@ public class Problem1TwoSum {
 
     }
 
+    /**
+     * Approach: 
+     * -Sort the array
+     * -Perform Binary Search
+     */
     private static int[] solution1(int[] input, int target) {
         int[] out = new int[2];
         int r = input.length-1;
@@ -67,6 +72,10 @@ public class Problem1TwoSum {
 
 	}
 
+    /**
+     * Approach:
+     * - Use HashMap
+     */
 	private static int[] solution2(int[] input, int target) {
         int[] out = new int[2];
         Map<Integer,Integer> map = new HashMap<>();
