@@ -8,7 +8,7 @@ class Problem13{
         System.out.println(romanToInt("III")==3);
         System.out.println(romanToInt("IV")==4);
         System.out.println(romanToInt("IX")==9);
-        System.out.println(romanToInt("LVIII")==58);
+        System.out.println(romanToInt("xLVIII")==58);
         System.out.println(romanToInt("MCMXCIV")==1994);
         System.out.println(romanToInt("CCXVII")==217);
         System.out.println(romanToInt("DXLV")==545);
