@@ -1,4 +1,4 @@
-package com.leetcode.solutions;
+package com.leetcode.dp;
 
 /**
  * For O(n), refer https://leetcode.com/articles/longest-palindromic-substring/
@@ -69,7 +69,7 @@ class Problem5{
     /** 
      * O(n^2) time and O(n) space
      * We observe that a palindrome mirrors around its center. Therefore, a palindrome 
-     * can be expanded from its center, and there are only 2n - 12n−1 such centers.
+     * can be expanded from its center, and there are only 2n -1 such centers.
 
         You might be asking why there are 2n -1 but not n centers? 
         The reason is the center of a palindrome can be in between two letters. 

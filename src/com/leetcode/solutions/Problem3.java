@@ -20,6 +20,7 @@ Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer 
 public class Problem3 {
 
     public static void main(String[] args) {
+        System.out.println(solution2("abcadcef")==5);
         System.out.println(solution2("abcd")==4);
         System.out.println(solution2("dcdf")==3);
         System.out.println(solution2("a")==1);
