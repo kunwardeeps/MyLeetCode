@@ -30,11 +30,11 @@ class Problem17{
         if (digits.isEmpty()){
             return output;
         }
-        recurse("", 0, digits.charAt(0), dict, digits, output);
+        recurse("", 0, dict, digits, output);
         return output;
     }
 
-    public static void recurse(String s, int i, char c, 
+    public static void recurse(String s, int i, 
         Map<Integer, String> dict, String digits, List<String> output){
         if (i == digits.length()){
             output.add(s.toString());
@@ -42,7 +42,7 @@ class Problem17{
         }
         String pattern = dict.get(Character.getNumericValue(digits.charAt(i)));
         for (int j=0; j<pattern.length(); j++){
-            recurse(s+pattern.charAt(j), i+1, pattern.charAt(j), dict, digits, output);
+            recurse(s+pattern.charAt(j), i+1, dict, digits, output);
         }
     }
 

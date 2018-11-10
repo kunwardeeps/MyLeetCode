@@ -6,6 +6,72 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Problem26RemDuplicates",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.leetcode.solutions.Problem26RemDuplicates",
+            "args": "",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem24SwapNodes",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.leetcode.solutions.Problem24SwapNodes",
+            "args": "",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Test1",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.leetcode.solutions.Test1",
+            "args": "",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem17",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.leetcode.solutions.Problem17",
+            "args": "",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem263",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.leetcode.solutions.Problem263",
+            "args": "",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem204",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.leetcode.solutions.Problem204",
+            "args": "",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch)",
             "request": "launch",
             "cwd": "${workspaceFolder}",
