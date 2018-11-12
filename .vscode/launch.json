@@ -6,6 +6,28 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Problem28ImplementStrStr",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.leetcode.solutions.Problem28ImplementStrStr",
+            "args": "",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem26RemoveInPlace",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.leetcode.solutions.Problem26RemoveInPlace",
+            "args": "",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Problem26RemDuplicates",
             "request": "launch",
             "cwd": "${workspaceFolder}",
