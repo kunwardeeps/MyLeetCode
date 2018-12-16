@@ -6,6 +6,94 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - BloombergSample1",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.leetcode.contest.BloombergSample1",
+            "args": "",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ScalyrTest2",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.leetcode.solutions.ScalyrTest2",
+            "args": "",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ScalyrTest",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.leetcode.solutions.ScalyrTest",
+            "args": "",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem53LargestSubarray",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.leetcode.dp.Problem53LargestSubarray",
+            "args": "",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem70ClimbingSteps",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.leetcode.dp.Problem70ClimbingSteps",
+            "args": "",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem746",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.leetcode.dp.Problem746",
+            "args": "",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem121TradeStock",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.leetcode.dp.Problem121TradeStock",
+            "args": "",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem29DivideInts",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.leetcode.solutions.Problem29DivideInts",
+            "args": "",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Problem28ImplementStrStr",
             "request": "launch",
             "cwd": "${workspaceFolder}",
