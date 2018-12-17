@@ -2,7 +2,6 @@ package com.leetcode.dp;
 
 /**
  * Problem121TradeStock
- * TODO later
  */
 public class Problem121TradeStock {
 
@@ -15,7 +14,7 @@ public class Problem121TradeStock {
         System.out.println(maxProfit(new int[] {}) == 0);
     }
 
-    public static int maxProfit(int[] prices) {
+    public static int maxProfit1(int[] prices) {
         int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
         int minIndx = Integer.MIN_VALUE;;
@@ -35,5 +34,20 @@ public class Problem121TradeStock {
         else {
             return max - min;
         }
+    }
+
+    /**
+     * Elegant approach
+     */
+    public static int maxProfit(int prices[]) {
+        int minprice = Integer.MAX_VALUE;
+        int maxprofit = 0;
+        for (int i = 0; i < prices.length; i++) {
+            if (prices[i] < minprice)
+                minprice = prices[i];
+            else if (prices[i] - minprice > maxprofit)
+                maxprofit = prices[i] - minprice;
+        }
+        return maxprofit;
     }
 }

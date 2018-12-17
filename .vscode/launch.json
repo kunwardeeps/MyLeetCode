@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Problem687",
+            "request": "launch",
+            "mainClass": "com.leetcode.solutions.Problem687",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - BloombergSample1",
             "request": "launch",
             "cwd": "${workspaceFolder}",

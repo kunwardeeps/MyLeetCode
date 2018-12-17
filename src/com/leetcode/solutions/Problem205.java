@@ -1,6 +1,6 @@
 package com.leetcode.solutions;
 
-class Problem263{
+class Problem205{
     public static void main(String[] args) {
         System.out.println(isUgly(214797179) == false);
         System.out.println(isUgly(0) == false);

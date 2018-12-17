@@ -42,7 +42,7 @@ public class Problem2 {
             d1=l1!=null? l1.val: 0;
             d2=l2!=null? l2.val: 0;
             sum = d1+d2+carry;
-            currentNode = new ListNode(sum%10); //Remainder
+            currentNode = new ListNode(sum%10); //Remainder 
             if (header == null){
                 header = currentNode;
             }
