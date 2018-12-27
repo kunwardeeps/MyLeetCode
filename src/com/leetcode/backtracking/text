@@ -1,0 +1,4 @@
+["mqe","Mqe","MQe","MQE","MqE","mQe","mQE","mqE","mQE"]
+[abc, Abc, ABc, ABC, AbC, aBc, aBC, abC, aBC]
+Expected
+["mqe","mqE","mQe","mQE","Mqe","MqE","MQe","MQE"]

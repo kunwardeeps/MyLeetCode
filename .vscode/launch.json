@@ -6,6 +6,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Problem905OddEven",
+            "request": "launch",
+            "mainClass": "com.leetcode.arrays.Problem905OddEven",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem349IntersectingArrays",
+            "request": "launch",
+            "mainClass": "com.leetcode.binarysearch.Problem349IntersectingArrays",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem852PeakIndex",
+            "request": "launch",
+            "mainClass": "com.leetcode.binarysearch.Problem852PeakIndex",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem962MaxRampWidth",
+            "request": "launch",
+            "mainClass": "com.leetcode.contest.Problem962MaxRampWidth",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem961NRepeatedElement",
+            "request": "launch",
+            "mainClass": "com.leetcode.contest.Problem961NRepeatedElement",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem784Permutation",
+            "request": "launch",
+            "mainClass": "com.leetcode.backtracking.Problem784Permutation",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem617MergeBinaryTrees",
+            "request": "launch",
+            "mainClass": "com.leetcode.tree.Problem617MergeBinaryTrees",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem122TradeStock2",
+            "request": "launch",
+            "mainClass": "com.leetcode.dp.Problem122TradeStock2",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Problem687",
             "request": "launch",
             "mainClass": "com.leetcode.solutions.Problem687",
