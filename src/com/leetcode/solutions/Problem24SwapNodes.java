@@ -3,10 +3,10 @@ package com.leetcode.solutions;
 import java.util.ArrayList;
 import java.util.List;
 
-class ListNode {
+class Node {
     int val;
-    ListNode next;
-    ListNode(int x) { val = x; }
+    Node next;
+    Node(int x) { val = x; }
 }
 
 class Problem24SwapNodes{
@@ -18,12 +18,12 @@ class Problem24SwapNodes{
         printList(swapPairs(createList(new int[] {1, 2, 3, 4})));
     }
 
-    public static ListNode swapPairs(ListNode head) {
-        ListNode current = head;
-        ListNode newHead = null;
-        ListNode prev = null;
+    public static Node swapPairs(Node head) {
+        Node current = head;
+        Node newHead = null;
+        Node prev = null;
         while (current != null){
-            ListNode next = current.next;
+            Node next = current.next;
             if (newHead == null){
                 newHead = next;
                 if (next == null){
@@ -44,26 +44,26 @@ class Problem24SwapNodes{
         return newHead;
     }
 
-    private static ListNode createList(int[] arr){
+    private static Node createList(int[] arr){
         if (arr.length == 0){
             return null;
         }
-        ListNode head = null;
-        ListNode node = null;
+        Node head = null;
+        Node node = null;
         for (int i: arr){
             if (head == null){
-                head = new ListNode(i);
+                head = new Node(i);
                 node = head;
             }
             else {
-                node.next = new ListNode(i);
+                node.next = new Node(i);
                 node = node.next;
             }
         }
         return head;
     }
 
-    private static void printList(ListNode node) {
+    private static void printList(Node node) {
         List<Integer> result = new ArrayList<>();
         while(node!=null){
             result.add(node.val);

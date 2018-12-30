@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Problem967ConsecInts",
+            "request": "launch",
+            "mainClass": "com.leetcode.contest.Problem967ConsecInts",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem965UnivaluedTree",
+            "request": "launch",
+            "mainClass": "com.leetcode.contest.Problem965UnivaluedTree",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem929UniqueEmail",
+            "request": "launch",
+            "mainClass": "com.leetcode.string.Problem929UniqueEmail",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem303",
+            "request": "launch",
+            "mainClass": "com.leetcode.dp.Problem303",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem561ArrayPartition",
+            "request": "launch",
+            "mainClass": "com.leetcode.arrays.Problem561ArrayPartition",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem198HouseRobber",
+            "request": "launch",
+            "mainClass": "com.leetcode.dp.Problem198HouseRobber",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Problem905OddEven",
             "request": "launch",
             "mainClass": "com.leetcode.arrays.Problem905OddEven",
