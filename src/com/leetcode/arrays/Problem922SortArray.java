@@ -16,7 +16,7 @@ public class Problem922SortArray {
      * @param A
      * @return
      */
-    public int[] sortArrayByParityII(int[] A) {
+    public static int[] sortArrayByParityII(int[] A) {
         int len = A.length;
             int[] val = new int[A.length];
             int even = 0;

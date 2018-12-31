@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Problem338CountingBits",
+            "request": "launch",
+            "mainClass": "com.leetcode.dp.Problem338CountingBits",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Problem922SortArray",
             "request": "launch",
             "mainClass": "com.leetcode.arrays.Problem922SortArray",
