@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Problem922SortArray",
+            "request": "launch",
+            "mainClass": "com.leetcode.arrays.Problem922SortArray",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem700BST",
+            "request": "launch",
+            "mainClass": "com.leetcode.tree.Problem700BST",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Problem967ConsecInts",
             "request": "launch",
             "mainClass": "com.leetcode.contest.Problem967ConsecInts",
