@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Problem804UniqueWords",
+            "request": "launch",
+            "mainClass": "com.leetcode.string.Problem804UniqueWords",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem167TwoSum",
+            "request": "launch",
+            "mainClass": "com.leetcode.binarysearch.Problem167TwoSum",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem872LeafSimilar",
+            "request": "launch",
+            "mainClass": "com.leetcode.tree.Problem872LeafSimilar",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Problem338CountingBits",
             "request": "launch",
             "mainClass": "com.leetcode.dp.Problem338CountingBits",
