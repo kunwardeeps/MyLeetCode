@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Problem860LemonadeChange",
+            "request": "launch",
+            "mainClass": "com.leetcode.greedy.Problem860LemonadeChange",
+            "projectName": "MyLeetCode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Problem804UniqueWords",
             "request": "launch",
             "mainClass": "com.leetcode.string.Problem804UniqueWords",
