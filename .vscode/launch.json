@@ -1,375 +1,152 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
     "configurations": [
         {
             "type": "java",
-            "name": "CodeLens (Launch) - Problem860LemonadeChange",
+            "name": "CodeLens (Launch) - Problem322CoinChange",
             "request": "launch",
-            "mainClass": "com.leetcode.greedy.Problem860LemonadeChange",
-            "projectName": "MyLeetCode"
+            "mainClass": "com.leetcode.dp.Problem322CoinChange",
+            "projectName": "my-leetcode"
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - Problem804UniqueWords",
+            "name": "CodeLens (Launch) - Problem5018CamelCase",
             "request": "launch",
-            "mainClass": "com.leetcode.string.Problem804UniqueWords",
-            "projectName": "MyLeetCode"
+            "mainClass": "com.leetcode.contest.Problem5018CamelCase",
+            "projectName": "my-leetcode"
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - Problem167TwoSum",
+            "name": "CodeLens (Launch) - Problem5017",
             "request": "launch",
-            "mainClass": "com.leetcode.binarysearch.Problem167TwoSum",
-            "projectName": "MyLeetCode"
+            "mainClass": "com.leetcode.contest.Problem5017",
+            "projectName": "my-leetcode"
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - Problem872LeafSimilar",
+            "name": "CodeLens (Launch) - Problem5016Parentheses",
             "request": "launch",
-            "mainClass": "com.leetcode.tree.Problem872LeafSimilar",
-            "projectName": "MyLeetCode"
+            "mainClass": "com.leetcode.contest.Problem5016Parentheses",
+            "projectName": "my-leetcode"
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - Problem338CountingBits",
+            "name": "CodeLens (Launch) - Problem1029BinaryPrefix",
             "request": "launch",
-            "mainClass": "com.leetcode.dp.Problem338CountingBits",
-            "projectName": "MyLeetCode"
+            "mainClass": "com.leetcode.contest.Problem1029BinaryPrefix",
+            "projectName": "my-leetcode"
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - Problem922SortArray",
+            "name": "CodeLens (Launch) - Problem104MaxDepthBinaryTree",
             "request": "launch",
-            "mainClass": "com.leetcode.arrays.Problem922SortArray",
-            "projectName": "MyLeetCode"
+            "mainClass": "com.leetcode.tree.Problem104MaxDepthBinaryTree",
+            "projectName": "my-leetcode"
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - Problem700BST",
+            "name": "CodeLens (Launch) - Problem153Sum",
             "request": "launch",
-            "mainClass": "com.leetcode.tree.Problem700BST",
-            "projectName": "MyLeetCode"
+            "mainClass": "com.leetcode.solutions.Problem153Sum",
+            "projectName": "my-leetcode"
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - Problem967ConsecInts",
+            "name": "CodeLens (Launch) - Problem696CountBinaryStrings",
             "request": "launch",
-            "mainClass": "com.leetcode.contest.Problem967ConsecInts",
-            "projectName": "MyLeetCode"
+            "mainClass": "com.leetcode.string.Problem696CountBinaryStrings",
+            "projectName": "my-leetcode"
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - Problem965UnivaluedTree",
+            "name": "CodeLens (Launch) - Problem35SearchInsertPosition",
             "request": "launch",
-            "mainClass": "com.leetcode.contest.Problem965UnivaluedTree",
-            "projectName": "MyLeetCode"
+            "mainClass": "com.leetcode.arrays.Problem35SearchInsertPosition",
+            "projectName": "my-leetcode"
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - Problem929UniqueEmail",
+            "name": "CodeLens (Launch) - SubstringProblem1",
             "request": "launch",
-            "mainClass": "com.leetcode.string.Problem929UniqueEmail",
-            "projectName": "MyLeetCode"
+            "mainClass": "com.amazon.SubstringProblem1",
+            "projectName": "my-leetcode"
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - Problem303",
+            "name": "CodeLens (Launch) - SubstringProblem",
             "request": "launch",
-            "mainClass": "com.leetcode.dp.Problem303",
-            "projectName": "MyLeetCode"
+            "mainClass": "com.amazon.SubstringProblem",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem10",
+            "request": "launch",
+            "mainClass": "com.leetcode.contest.Problem10",
+            "projectName": "my-leetcode",
+            "externalConsole": true
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem3",
+            "request": "launch",
+            "mainClass": "com.leetcode.contest.Problem3",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem4",
+            "request": "launch",
+            "mainClass": "com.leetcode.contest.Problem4",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem5",
+            "request": "launch",
+            "mainClass": "com.leetcode.dp.Problem5",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem931MinimumPathFalling",
+            "request": "launch",
+            "mainClass": "com.leetcode.dp.Problem931MinimumPathFalling",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem2",
+            "request": "launch",
+            "mainClass": "com.leetcode.contest.Problem2",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem1",
+            "request": "launch",
+            "mainClass": "com.leetcode.contest.Problem1",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem766Toeplitz",
+            "request": "launch",
+            "mainClass": "com.leetcode.arrays.Problem766Toeplitz",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem867TransposeMatrix",
+            "request": "launch",
+            "mainClass": "com.leetcode.arrays.Problem867TransposeMatrix",
+            "projectName": "my-leetcode"
         },
         {
             "type": "java",
             "name": "CodeLens (Launch) - Problem561ArrayPartition",
             "request": "launch",
             "mainClass": "com.leetcode.arrays.Problem561ArrayPartition",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Problem198HouseRobber",
-            "request": "launch",
-            "mainClass": "com.leetcode.dp.Problem198HouseRobber",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Problem905OddEven",
-            "request": "launch",
-            "mainClass": "com.leetcode.arrays.Problem905OddEven",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Problem349IntersectingArrays",
-            "request": "launch",
-            "mainClass": "com.leetcode.binarysearch.Problem349IntersectingArrays",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Problem852PeakIndex",
-            "request": "launch",
-            "mainClass": "com.leetcode.binarysearch.Problem852PeakIndex",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Problem962MaxRampWidth",
-            "request": "launch",
-            "mainClass": "com.leetcode.contest.Problem962MaxRampWidth",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Problem961NRepeatedElement",
-            "request": "launch",
-            "mainClass": "com.leetcode.contest.Problem961NRepeatedElement",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Problem784Permutation",
-            "request": "launch",
-            "mainClass": "com.leetcode.backtracking.Problem784Permutation",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Problem617MergeBinaryTrees",
-            "request": "launch",
-            "mainClass": "com.leetcode.tree.Problem617MergeBinaryTrees",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Problem122TradeStock2",
-            "request": "launch",
-            "mainClass": "com.leetcode.dp.Problem122TradeStock2",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Problem687",
-            "request": "launch",
-            "mainClass": "com.leetcode.solutions.Problem687",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - BloombergSample1",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "com.leetcode.contest.BloombergSample1",
-            "args": "",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - ScalyrTest2",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "com.leetcode.solutions.ScalyrTest2",
-            "args": "",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - ScalyrTest",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "com.leetcode.solutions.ScalyrTest",
-            "args": "",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Problem53LargestSubarray",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "com.leetcode.dp.Problem53LargestSubarray",
-            "args": "",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Problem70ClimbingSteps",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "com.leetcode.dp.Problem70ClimbingSteps",
-            "args": "",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Problem746",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "com.leetcode.dp.Problem746",
-            "args": "",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Problem121TradeStock",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "com.leetcode.dp.Problem121TradeStock",
-            "args": "",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Problem29DivideInts",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "com.leetcode.solutions.Problem29DivideInts",
-            "args": "",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Problem28ImplementStrStr",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "com.leetcode.solutions.Problem28ImplementStrStr",
-            "args": "",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Problem26RemoveInPlace",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "com.leetcode.solutions.Problem26RemoveInPlace",
-            "args": "",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Problem26RemDuplicates",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "com.leetcode.solutions.Problem26RemDuplicates",
-            "args": "",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Problem24SwapNodes",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "com.leetcode.solutions.Problem24SwapNodes",
-            "args": "",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Test1",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "com.leetcode.solutions.Test1",
-            "args": "",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Problem17",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "com.leetcode.solutions.Problem17",
-            "args": "",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Problem263",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "com.leetcode.solutions.Problem263",
-            "args": "",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Problem204",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "com.leetcode.solutions.Problem204",
-            "args": "",
-            "projectName": "MyLeetCode"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-Quicksort",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "com.leetcode.algos.QuickSort",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-Problem1TwoSum",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "com.leetcode.solutions.Problem1TwoSum",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "Debug (Attach)",
-            "request": "attach",
-            "hostName": "localhost",
-            "port": 0
+            "projectName": "my-leetcode"
         }
     ]
 }
