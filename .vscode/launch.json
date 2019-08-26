@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Problem1170",
+            "request": "launch",
+            "mainClass": "com.leetcode.contest.Problem1170",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem300LIS",
+            "request": "launch",
+            "mainClass": "com.leetcode.dp.Problem300LIS",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem238ProductExceptSelf",
+            "request": "launch",
+            "mainClass": "com.leetcode.arrays.Problem238ProductExceptSelf",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Problem322CoinChange",
             "request": "launch",
             "mainClass": "com.leetcode.dp.Problem322CoinChange",
