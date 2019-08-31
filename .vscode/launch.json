@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MergeSort",
+            "request": "launch",
+            "mainClass": "com.leetcode.algos.MergeSort",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem138CopyRandomList",
+            "request": "launch",
+            "mainClass": "com.leetcode.linkedlist.Problem138CopyRandomList",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem48RotateMatrix",
+            "request": "launch",
+            "mainClass": "com.leetcode.arrays.Problem48RotateMatrix",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem445AddNumbers",
+            "request": "launch",
+            "mainClass": "com.leetcode.linkedlist.Problem445AddNumbers",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Problem1170",
             "request": "launch",
             "mainClass": "com.leetcode.contest.Problem1170",
