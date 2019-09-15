@@ -2,6 +2,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Problem5191KConcatMaxSum",
+            "request": "launch",
+            "mainClass": "com.leetcode.contest.Problem5191KConcatMaxSum",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem5190ReverseString",
+            "request": "launch",
+            "mainClass": "com.leetcode.contest.Problem5190ReverseString",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem5189MaxBalloons",
+            "request": "launch",
+            "mainClass": "com.leetcode.contest.Problem5189MaxBalloons",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem428SerializeDeserialize",
+            "request": "launch",
+            "mainClass": "com.leetcode.tree.Problem428SerializeDeserialize",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - KnapsackProblem",
+            "request": "launch",
+            "mainClass": "com.leetcode.dp.KnapsackProblem",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem402RemoveKDigits",
+            "request": "launch",
+            "mainClass": "com.leetcode.arrays.Problem402RemoveKDigits",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem448SerializeDeserialize",
+            "request": "launch",
+            "mainClass": "com.leetcode.tree.Problem448SerializeDeserialize",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MergeSort",
             "request": "launch",
             "mainClass": "com.leetcode.algos.MergeSort",
