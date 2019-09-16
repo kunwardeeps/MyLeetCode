@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ProblemBuyTickets",
+            "request": "launch",
+            "mainClass": "com.twitter.ProblemBuyTickets",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Problem5191KConcatMaxSum",
             "request": "launch",
             "mainClass": "com.leetcode.contest.Problem5191KConcatMaxSum",
