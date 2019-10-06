@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Problem198HouseRobber2",
+            "request": "launch",
+            "mainClass": "com.leetcode.dp.Problem198HouseRobber2",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem198",
+            "request": "launch",
+            "mainClass": "com.leetcode.dp.Problem198",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AudibleProblem2",
+            "request": "launch",
+            "mainClass": "com.audible.AudibleProblem2",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AudibleProblem1",
+            "request": "launch",
+            "mainClass": "com.audible.AudibleProblem1",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ProblemBuyTickets",
             "request": "launch",
             "mainClass": "com.twitter.ProblemBuyTickets",
