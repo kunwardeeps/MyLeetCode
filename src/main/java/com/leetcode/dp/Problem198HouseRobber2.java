@@ -37,6 +37,7 @@ public class Problem198HouseRobber2 {
         
         int[] dp = new int[nums.length+1];
         
+        
         // initial condition
         dp[0] = 0;
         dp[1] = robFirst ? nums[0]: 0;

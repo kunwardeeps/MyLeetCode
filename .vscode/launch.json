@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Problem139WordBreak",
+            "request": "launch",
+            "mainClass": "com.leetcode.dp.Problem139WordBreak",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StreamsTest",
+            "request": "launch",
+            "mainClass": "com.leetcode.streams.StreamsTest",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Problem198HouseRobber2",
             "request": "launch",
             "mainClass": "com.leetcode.dp.Problem198HouseRobber2",
