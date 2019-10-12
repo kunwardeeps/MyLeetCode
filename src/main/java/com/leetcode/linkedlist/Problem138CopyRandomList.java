@@ -35,19 +35,22 @@ public class Problem138CopyRandomList {
     }
 
     private static Node recurse(Node node, Map<Integer, Node> map) {
+        if (node == null) {
+            return null;
+        }
+        
         if (map.containsKey(node.val)) {
             return map.get(node.val);
         } else {
-            Node newNode = new Node(node.val, null, null);
-            map.put(newNode.val, newNode);
-            if (node.next != null) {
-                newNode.next = recurse(node.next, map);
-            }
-            if (node.random != null) {
-                newNode.random = recurse(node.random, map);
-            }
-            return newNode;
+            Node copyNode = new Node(node.val, null, null);
+            map.put(node.val, copyNode);
+
+            copyNode.next = recurse(node.next, map);
+            copyNode.random = recurse(node.random, map);
+            
+            return copyNode;
         }
+        
     }
 
 }
