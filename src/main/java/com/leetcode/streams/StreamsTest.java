@@ -17,7 +17,7 @@ public class StreamsTest {
     public static void main(String[] args) {
         int[] arr = new int[] {4, 3, 2, 1};
 
-        Arrays.stream(arr).forEach(System.out::println);
+        Arrays.stream(arr).forEach(System.out::print);
 
         List<Integer> list = Arrays.stream(arr).boxed().collect(Collectors.toList());
         System.out.println(list);
@@ -25,6 +25,7 @@ public class StreamsTest {
         Map<Integer, Integer> map = Arrays.stream(arr).boxed().collect(Collectors.toMap(i -> i, i -> i));
         System.out.println(map);
 
+        // Reverse order map by Key
         Map<Integer, Integer> sortedMap = Arrays.stream(arr)
                                                     .boxed()
                                                     .sorted((o1,o2)-> o2.compareTo(o1))
@@ -40,6 +41,7 @@ public class StreamsTest {
         testMap.put(50, 3);
         testMap.put(5, 1);
 
+        // Sort by Key if value is same, else sort by value
         Map<Integer, Integer> sortMapByValues = testMap.entrySet()
                                                     .stream()
                                                     .sorted((e1, e2) -> e1.getValue() == e2.getValue()? Integer.compare(e1.getKey(), e2.getKey()): Integer.compare(e1.getValue(), e2.getValue()))

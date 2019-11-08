@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Problem763Partitions",
+            "request": "launch",
+            "mainClass": "com.leetcode.greedy.Problem763Partitions",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Problem957HashTable",
             "request": "launch",
             "mainClass": "com.leetcode.arrays.Problem957HashTable",
