@@ -1,8 +1,13 @@
 package com.leetcode.solutions;
 
+import java.util.Arrays;
+
 public class Test{
     public static void main(String[] args) {
-        System.out.println(solution(new int []{1,2,3,4,5}));
+        Integer[] arr = new Integer[] {5, 8, 1, 3};
+        Arrays.sort(arr, (o1, o2) -> -1);
+        System.out.println(Arrays.toString(arr));
+        //System.out.println(solution(new int []{1,2,3,4,5}));
     }
 
 	public static int solution(int[] A) { 

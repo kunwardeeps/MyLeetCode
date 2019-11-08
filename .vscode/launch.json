@@ -2,6 +2,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Problem957HashTable",
+            "request": "launch",
+            "mainClass": "com.leetcode.arrays.Problem957HashTable",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem819UniqueWords",
+            "request": "launch",
+            "mainClass": "com.leetcode.string.Problem819UniqueWords",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem1die",
+            "request": "launch",
+            "mainClass": "com.galatea.Problem1die",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestProblem",
+            "request": "launch",
+            "mainClass": "com.amazon.TestProblem",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Test",
+            "request": "launch",
+            "mainClass": "com.leetcode.solutions.Test",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem572Subtree",
+            "request": "launch",
+            "mainClass": "com.leetcode.tree.Problem572Subtree",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Problem139WordBreak",
             "request": "launch",
             "mainClass": "com.leetcode.dp.Problem139WordBreak",

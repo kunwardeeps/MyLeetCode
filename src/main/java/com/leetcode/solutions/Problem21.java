@@ -23,53 +23,53 @@ public class Problem21{
         printList(p.mergeTwoLists(l1, l2));
     }
 
-    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+    public ListNode mergeTwoLists(ListNode head1, ListNode head2) {
 
         ListNode head = null;
         ListNode current = null;
         
-        while (l1 != null && l2 != null) {
-            if (l1.val < l2.val) {
+        while (head1 != null && head2 != null) {
+            if (head1.val < head2.val) {
                 if (head == null) {
-                    head = new ListNode(l1.val);
+                    head = new ListNode(head1.val);
                     current = head;
                 } else {
-                    current.next = new ListNode(l1.val);
+                    current.next = new ListNode(head1.val);
                     current = current.next;
                 }
-                l1 = l1.next;
+                head1 = head1.next;
             } else {
                 if (head == null) {
-                    head = new ListNode(l2.val);
+                    head = new ListNode(head2.val);
                     current = head;
                 } else {
-                    current.next = new ListNode(l2.val);
+                    current.next = new ListNode(head2.val);
                     current = current.next;
                 }
-                l2 = l2.next;
+                head2 = head2.next;
             }
         }
         
-        while (l1 != null) {
+        while (head1 != null) {
             if (head == null) {
-                head = new ListNode(l1.val);
+                head = new ListNode(head1.val);
                 current = head;
             } else {
-                current.next = new ListNode(l1.val);
+                current.next = new ListNode(head1.val);
                 current = current.next;
             }
-            l1 = l1.next;
+            head1 = head1.next;
         }
         
-        while (l2 != null) {
+        while (head2 != null) {
             if (head == null) {
-                head = new ListNode(l2.val);
+                head = new ListNode(head2.val);
                 current = head;
             } else {
-                current.next = new ListNode(l2.val);
+                current.next = new ListNode(head2.val);
                 current = current.next;
             }
-            l2 = l2.next;
+            head2 = head2.next;
         }
         
         return head;
