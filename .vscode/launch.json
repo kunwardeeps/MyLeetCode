@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Problem1McK",
+            "request": "launch",
+            "mainClass": "com.mckinsey.Problem1McK",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Problem763Partitions",
             "request": "launch",
             "mainClass": "com.leetcode.greedy.Problem763Partitions",

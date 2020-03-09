@@ -17,7 +17,7 @@ class Problem153Sum{
         List<List<Integer>> result = new ArrayList<>();
 
         for (int i = 0; i < nums.length - 2; i++) {
-            triplet = new ArrayList<>();;
+            triplet = new ArrayList<>();
             int l = i + 1;
             int r = nums.length - 1;
             while (l < r) {
