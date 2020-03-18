@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Problem53LargestSubarray",
+            "request": "launch",
+            "mainClass": "com.leetcode.dp.Problem53LargestSubarray",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Problem1McK",
             "request": "launch",
             "mainClass": "com.mckinsey.Problem1McK",
