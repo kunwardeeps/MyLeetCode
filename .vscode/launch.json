@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Problem76MinimumSubstring",
+            "request": "launch",
+            "mainClass": "com.leetcode.string.Problem76MinimumSubstring",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Problem53LargestSubarray",
             "request": "launch",
             "mainClass": "com.leetcode.dp.Problem53LargestSubarray",

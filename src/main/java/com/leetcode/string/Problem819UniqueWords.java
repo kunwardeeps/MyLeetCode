@@ -20,8 +20,11 @@ public class Problem819UniqueWords {
         String[] words = paragraph.toLowerCase().split("[ !?',;.]+");
         Map<String, Long> frequency = Arrays.stream(words).collect(
             Collectors.groupingBy(Function.identity(), Collectors.counting()));
-        String mostCommonWord = frequency.entrySet().stream().filter(e -> !bannedList.contains(e.getKey().toLowerCase())).sorted(
-            Map.Entry.<String, Long>comparingByValue().reversed()).findFirst().map(e -> e.getKey()).get();
+        String mostCommonWord = frequency.entrySet().stream()
+            .filter(e -> !bannedList.contains(e.getKey().toLowerCase()))
+            .sorted(Map.Entry.<String, Long>comparingByValue().reversed())
+            .findFirst().map(e -> e.getKey())
+            .get();
         return mostCommonWord;
     }
 }

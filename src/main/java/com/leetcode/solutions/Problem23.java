@@ -47,36 +47,26 @@ public class Problem23{
             return null;
         }
 
-        PriorityQueue<ListNode> heap = new PriorityQueue<>(new Comparator<ListNode>() {
+        PriorityQueue<ListNode> heap = new PriorityQueue<>((i,j) -> i.val - j.val);
 
-			@Override
-			public int compare(ListNode o1, ListNode o2) {
-				return o1.val - o2.val;
-			}
-        
-        });
-
-        for (int i=0; i<lists.length; i++){
-            while (lists[i] != null){
-                heap.add(lists[i]);
-                lists[i] = lists[i].next;
+        for (ListNode node: lists) {
+            if (node!=null) {
+                heap.add(node);
             }
         }
 
-        ListNode head=null, node=null;
+        ListNode dummy = new ListNode(0);
+        ListNode node = dummy;
 
-        node = heap.poll();
-        head = node;
         while (!heap.isEmpty()){
             node.next = heap.poll();
             node = node.next;
+            
+            if (node.next != null) {
+                heap.add(node.next);
+            }
         }
-
-        if (node != null){
-            node.next = null;
-        }   
-
-        return head;
+        return dummy.next;
 
     }
 

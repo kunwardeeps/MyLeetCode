@@ -26,7 +26,7 @@ public class DepthFirstSearch {
   
         for (Integer n: adj[v]) { 
             if (!visited[n]) {
-                dfs(n, visited); 
+                topologicalSort(n, visited); 
             }
         } 
         System.out.println(v);
