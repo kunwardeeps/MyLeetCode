@@ -11,22 +11,74 @@ public class Problem1 {
     public static void main(final String[] args) {
     }
 
-    public int minTime(int n, int[][] edges, List<Boolean> hasApple) {
+    public int minReorder(int n, int[][] connections) {
+        boolean[] visited = new boolean[n];
         List<List<Integer>> graph = new ArrayList<>(n);
-        buildGraph(graph, edges);
-        return dfs(graph, hasApple, 0);
+        for (int i = 0; i < n; i++) {
+            graph.add(0, new ArrayList<>());
+        }
+        Set<String> dirs = new HashSet<>();
+        buildGraph(connections, graph, dirs);
+        return connections.length - dfs(graph, dirs, visited, 0, -1);
     }
 
-    private int dfs(List<List<Integer>> graph, List<Boolean> hasApple, int i) {
-        if (i >= graph.size() || graph.get(i).size() == 0) {
-            return 0;
+    private int dfs(List<List<Integer>> graph, Set<String> dirs, boolean[] visited, int i, int prev) {
+        int count = 0;
+        if (visited[i]) {
+            return count;
         }
-        List<Integer> node = graph.get(i);
-        int total = hasApple.get(i) ? 2 : 0;
-        for (int child: node) {
-            total += dfs(graph, hasApple, child);
+        visited[i] = true;
+        if (prev != -1 && dirs.contains(prev + "#" + i)) {
+            count++;
+        }
+        for (int next: graph.get(i)) {
+            count += dfs(graph, dirs, visited, next, i);
+        }
+        return count;
+    }
+
+    private void buildGraph(int[][] connections, List<List<Integer>> graph, Set<String> dirs) {
+        for (int i = 0; i < connections.length; i++) {
+            dirs.add(connections[i][0] + "#" + connections[i][1]);
+            graph.get(connections[i][0]).add(connections[i][1]);
+            graph.get(connections[i][1]).add(connections[i][0]);
+        }
+    }
+
+    public int numPoints(int[][] points, int r) {
+        int maxX = Integer.MIN_VALUE;
+        int maxY = Integer.MIN_VALUE;
+        int minX = Integer.MAX_VALUE;
+        int minY = Integer.MAX_VALUE;
+        for (int[] point: points) {
+            maxX = Math.max(maxX, point[0]);
+            maxY = Math.max(maxY, point[1]);
+            minX = Math.max(minX, point[0]);
+            minY = Math.max(minY, point[1]);
+        }
+
+        int maxPoints = 0;
+
+        for (int i = minX; i <= maxX; i++) {
+            for (int j = minY; j <= minY; j++) {
+                maxPoints = Math.max(maxPoints, getPointsInside(points, r, i, j));
+            }
+        }
+        return maxPoints;
+    }
+
+    private int getPointsInside(int[][] points, int r, int i, int j) {
+        int total = 0;
+        for (int[] point: points) {
+            if (pointInside(point, r, i, j)) {
+                total++;
+            }
         }
         return total;
+    }
+
+    private boolean pointInside(int[] point, int r, int i, int j) {
+        return (i - point[0]) * (i - point[0]) + (j - point[1]) * (j - point[1]) <= r*r;
     }
 
     private void buildGraph(List<List<Integer>> graph, int[][] edges) {
