@@ -34,6 +34,8 @@ public class ProblemLoungeStocking {
         for (int k = 1; k <= required && j + k < supplier.length; k++) {
             if (supplier[j + k] >= day) {
                 recurse(onHand, supplier, i + required - k, j + k, day + 1, total + k, demand);
+            } else {
+                j++;
             }
         }
     }
