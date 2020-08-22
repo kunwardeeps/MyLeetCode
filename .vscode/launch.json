@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ProblemLoungeStocking",
+            "request": "launch",
+            "mainClass": "com.paypal.ProblemLoungeStocking",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem84LargestAreaHistogram",
+            "request": "launch",
+            "mainClass": "com.leetcode.stack.Problem84LargestAreaHistogram",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - BinarySearch",
             "request": "launch",
             "mainClass": "com.leetcode.binarysearch.BinarySearch",

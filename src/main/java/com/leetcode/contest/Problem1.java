@@ -37,6 +37,20 @@ public class Problem1 {
         return count;
     }
 
+    public int findLeastNumOfUniqueInts(int[] arr, int k) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i: arr) {
+            map.put(i, map.getOrDefault(i, 0) + 1);
+        }
+        Map<Integer, Integer> sortedMap = map.entrySet().stream().sorted((e1, e2) -> e1.getValue() - e2.getValue()).collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e2, LinkedHashMap::new));
+        
+        int res = 0;
+        
+        String s = new String();
+        String[] arra = s.split("(");
+        return res;
+    }
+
     private void buildGraph(int[][] connections, List<List<Integer>> graph, Set<String> dirs) {
         for (int i = 0; i < connections.length; i++) {
             dirs.add(connections[i][0] + "#" + connections[i][1]);
@@ -96,7 +110,8 @@ public class Problem1 {
         if (k == 0 || l > r) {
             return 0;
         }
-        List<Integer> s = new ArrayList<>();
+        LinkedList<Integer> s = new LinkedList<>();
+        
         PriorityQueue<Integer> maxHeap = new PriorityQueue<>(3, (a,b) -> b - a);
         //s.addAll(cardPoints);
 

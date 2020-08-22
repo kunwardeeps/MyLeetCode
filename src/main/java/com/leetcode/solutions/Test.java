@@ -1,49 +1,28 @@
 package com.leetcode.solutions;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Test{
+
+    static List<String> combinations = new ArrayList<>();
+    static int i = 0;
     public static void main(String[] args) {
-        Integer[] arr = new Integer[] {5, 8, 1, 3};
-        Arrays.sort(arr, (o1, o2) -> -1);
-        System.out.println(Arrays.toString(arr));
         //System.out.println(solution(new int []{1,2,3,4,5}));
+        recurse("abcd", 3, 0, "");
+        System.out.println(combinations);
     }
-
-	public static int solution(int[] A) { 
-        int len = A.length;
-        int total = 0;
-
-        for (int i: A) 
-            total += i;
-      
-        boolean dp[][] = new boolean[len+1][total+1]; 
-      
-        //Initialize 
-        for (int i = 0; i <= len; i++) {
-            dp[i][0] = true;
+    
+    public static void recurse(String str, int l, int i, String current) {
+        if (current.length() == l) {
+            combinations.add(current);
+            return;
         }
-        for (int i = 1; i <= total; i++) {
-            dp[0][i] = false; 
-        }
-
-        for (int i = 1; i <= len; i++) { 
-            for (int j = 1; j <= total; j++) { 
-
-                dp[i][j] = dp[i-1][j];
-      
-                if (A[i-1] <= j) {
-                    dp[i][j] = dp[i][j] | dp[i-1][j-A[i-1]];
-                }
-            }
-        }
-
-        int diff = Integer.MAX_VALUE;
-        for (int i = total/2; i >= 0; i--) {
-            if (dp[len][i] == true) {
-                return diff = total-2*i;
-            }
-        }
-        return diff;
+        if (i >= str.length() || str.length() - i < l - current.length()) return;
+        
+        recurse(str, l, i + 1, current + Character.toString(str.charAt(i)));
+        recurse(str, l, i + 1, current);
+        
     }
 }
