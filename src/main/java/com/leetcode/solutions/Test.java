@@ -89,18 +89,18 @@ public class Test {
             map.put(sum, i);
         }
 
-        map.values().stream().collect(Collectors.toList())
-        
+        map.values().stream().collect(Collectors.toList());
+
         sum = 0;
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
             if (map.get(sum - target) != null) {
-                lsize = Math.min(lsize, i - map.get(sum - target)); 
+                lsize = Math.min(lsize, i - map.get(sum - target));
             }
             // hmap.get(sum+target) searches for any sub-array starting with index i+1 with sum target.
             if (map.get(sum + target) != null && lsize < Integer.MAX_VALUE) {
                 // updates the result only if both left and right sub-array exists.
-                result = Math.min(result, map.get(sum + target) - i + lsize); 
+                result = Math.min(result, map.get(sum + target) - i + lsize);
             }
         }
         return result == Integer.MAX_VALUE ? -1 : result;

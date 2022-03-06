@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch QuickSort",
+            "request": "launch",
+            "mainClass": "com.algos.QuickSort",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "Launch MergeSort",
+            "request": "launch",
+            "mainClass": "com.algos.MergeSort",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "Launch QuickSort",
+            "request": "launch",
+            "mainClass": "com.leetcode.algos.QuickSort",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ProblemLoungeStocking",
             "request": "launch",
             "mainClass": "com.paypal.ProblemLoungeStocking",
