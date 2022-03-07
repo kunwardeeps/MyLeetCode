@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BFS",
+            "request": "launch",
+            "mainClass": "com.algos.BFS",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "Launch Backtracking",
+            "request": "launch",
+            "mainClass": "com.algos.Backtracking",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "Launch BinarySearch",
+            "request": "launch",
+            "mainClass": "com.algos.BinarySearch",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
             "name": "Launch QuickSort",
             "request": "launch",
             "mainClass": "com.algos.QuickSort",
