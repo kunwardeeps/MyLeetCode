@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Dijkstras",
+            "request": "launch",
+            "mainClass": "com.algos.Dijkstras",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
             "name": "Launch DFS",
             "request": "launch",
             "mainClass": "com.algos.DFS",

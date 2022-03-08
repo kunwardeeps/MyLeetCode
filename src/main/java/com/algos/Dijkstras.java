@@ -1,31 +1,28 @@
 package com.algos;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 import java.util.PriorityQueue;
-import java.util.Set;
 
 public class Dijkstras {
     
-    public static void dijkstra(Map<Integer, Map<Integer, Integer>> graph, int N, int K) {
-        //Pair is a pojo with label and current distance
+    public static Map<Integer, Integer> dijkstra(Map<Integer, Map<Integer, Integer>> graph, int source) {
+
         PriorityQueue<Pair> minHeap = new PriorityQueue<>((p1,p2) -> p1.dist - p2.dist);
-        Set<Integer> visited = new HashSet<>();
-        minHeap.offer(new Pair(K, 0));//Initialize first node dist with 0
+        minHeap.offer(new Pair(source, 0));
+        Map<Integer, Integer> visited = new HashMap<>(); // track visited as well as final min dist
         
         while (!minHeap.isEmpty()) {
-            Pair cur = minHeap.poll(); //get the unvisited node with min distance
+            Pair currentPair = minHeap.poll(); //get the unvisited node with min distance
             
-            if (visited.contains(cur.label)) continue;
-            visited.add(cur.label);
-    
-            if (!graph.containsKey(cur.label)) continue;
+            if (visited.containsKey(currentPair.label)) continue;
+            visited.put(currentPair.label, currentPair.dist);
             
-            for (int neighbor : graph.get(cur.label).keySet()) {
-                minHeap.offer(new Pair(neighbor, cur.dist + graph.get(cur.label).get(neighbor)));
+            for (int neighbor : graph.get(currentPair.label).keySet()) {
+                minHeap.offer(new Pair(neighbor, currentPair.dist + graph.get(currentPair.label).get(neighbor)));
             }
         }
+        return visited;
     }
 
     /** https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/
@@ -48,7 +45,7 @@ public class Dijkstras {
         graph.computeIfAbsent(8, e -> new HashMap<>()).put(6, 6);
         graph.computeIfAbsent(6, e -> new HashMap<>()).put(8, 6);
         graph.computeIfAbsent(6, e -> new HashMap<>()).put(7, 1);
-        dijkstra(graph, graph.keySet().size(), 0);
+        System.out.println(dijkstra(graph, 0));
     }
 }
 
