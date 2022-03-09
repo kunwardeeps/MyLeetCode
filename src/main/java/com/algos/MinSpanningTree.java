@@ -4,9 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
 
-public class Dijkstras {
-    
-    public static Map<Integer, Integer> dijkstra(Map<Integer, Map<Integer, Integer>> graph, int source) {
+public class MinSpanningTree {
+    public static Map<Integer, Integer> mst(Map<Integer, Map<Integer, Integer>> graph, int source) {
 
         PriorityQueue<Pair> minHeap = new PriorityQueue<>((p1,p2) -> p1.dist - p2.dist);
         minHeap.offer(new Pair(source, 0));
@@ -19,7 +18,7 @@ public class Dijkstras {
             visited.put(currentPair.label, currentPair.dist);
             
             for (int neighbor : graph.get(currentPair.label).keySet()) {
-                minHeap.offer(new Pair(neighbor, currentPair.dist + graph.get(currentPair.label).get(neighbor)));
+                minHeap.offer(new Pair(neighbor, graph.get(currentPair.label).get(neighbor)));
             }
         }
         return visited;
@@ -57,7 +56,7 @@ public class Dijkstras {
         graph.computeIfAbsent(5, e -> new HashMap<>()).put(4, 10);
         graph.computeIfAbsent(4, e -> new HashMap<>()).put(3, 9);
         graph.computeIfAbsent(4, e -> new HashMap<>()).put(5, 10);
-        System.out.println(dijkstra(graph, 0));
+        System.out.println(mst(graph, 0));
     }
 }
 

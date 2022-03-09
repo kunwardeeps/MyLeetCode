@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MinSpanningTree",
+            "request": "launch",
+            "mainClass": "com.algos.MinSpanningTree",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
             "name": "Launch Dijkstras",
             "request": "launch",
             "mainClass": "com.algos.Dijkstras",
