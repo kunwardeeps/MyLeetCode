@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MonoStack",
+            "request": "launch",
+            "mainClass": "com.algos.MonoStack",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "Launch MinimumWindowSubstring",
+            "request": "launch",
+            "mainClass": "com.algos.MinimumWindowSubstring",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkedListSort",
+            "request": "launch",
+            "mainClass": "com.algos.LinkedListSort",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
             "name": "Launch MinSpanningTree",
             "request": "launch",
             "mainClass": "com.algos.MinSpanningTree",
