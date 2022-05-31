@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Trie",
+            "request": "launch",
+            "mainClass": "com.algos.Trie",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "Launch TopologicalSort",
+            "request": "launch",
+            "mainClass": "com.algos.TopologicalSort",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
             "name": "Launch MonoStack",
             "request": "launch",
             "mainClass": "com.algos.MonoStack",
