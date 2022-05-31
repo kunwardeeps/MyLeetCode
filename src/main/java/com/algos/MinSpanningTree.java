@@ -7,18 +7,18 @@ import java.util.PriorityQueue;
 public class MinSpanningTree {
     public static Map<Integer, Integer> mst(Map<Integer, Map<Integer, Integer>> graph, int source) {
 
-        PriorityQueue<Pair> minHeap = new PriorityQueue<>((p1,p2) -> p1.dist - p2.dist);
-        minHeap.offer(new Pair(source, 0));
+        PriorityQueue<Node> minHeap = new PriorityQueue<>((p1,p2) -> p1.dist - p2.dist);
+        minHeap.offer(new Node(source, 0));
         Map<Integer, Integer> visited = new HashMap<>(); // track visited as well as final min dist
         
         while (!minHeap.isEmpty()) {
-            Pair currentPair = minHeap.poll(); //get the unvisited node with min distance
+            Node currentPair = minHeap.poll(); //get the unvisited node with min distance
             
             if (visited.containsKey(currentPair.label)) continue;
             visited.put(currentPair.label, currentPair.dist);
             
             for (int neighbor : graph.get(currentPair.label).keySet()) {
-                minHeap.offer(new Pair(neighbor, graph.get(currentPair.label).get(neighbor)));
+                minHeap.offer(new Node(neighbor, graph.get(currentPair.label).get(neighbor)));
             }
         }
         return visited;
@@ -60,10 +60,10 @@ public class MinSpanningTree {
     }
 }
 
-class Pair {
+class Node {
     int label;
     int dist;
-    public Pair(int k, int i) {
+    public Node(int k, int i) {
         this.label = k;
         this.dist = i;
     }

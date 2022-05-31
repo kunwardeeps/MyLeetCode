@@ -1,3 +1,5 @@
+package com.algos;
+
 public class Trie {
     public class TrieNode {
         public TrieNode[] children = new TrieNode[26];
