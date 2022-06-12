@@ -1,6 +1,6 @@
 package com.algos;
 
-public class LinkedListSort {
+public class LinkedListReverse {
 
     public static ListNode reverse(ListNode head) {
         ListNode prev = null;
