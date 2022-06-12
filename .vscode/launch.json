@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch DP",
+            "request": "launch",
+            "mainClass": "com.algos.DP",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "Launch KNN",
+            "request": "launch",
+            "mainClass": "com.algos.KNN",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "Launch SlidingWindow",
+            "request": "launch",
+            "mainClass": "com.algos.SlidingWindow",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
             "name": "Launch Trie",
             "request": "launch",
             "mainClass": "com.algos.Trie",
