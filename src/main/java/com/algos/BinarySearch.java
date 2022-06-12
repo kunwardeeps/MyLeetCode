@@ -34,7 +34,7 @@ public class BinarySearch {
                 r = m - 1; 
             }
         } 
-        return l; 
+        return l > arr.length - 1 ? -1 : l; 
     } 
 
     public static int binarySearchFloor(int arr[], int x) { 
@@ -50,7 +50,7 @@ public class BinarySearch {
                 r = m - 1; 
             }
         } 
-        return Math.max(0, r); 
+        return r < 0 ? -1 : r; 
     } 
 
     /**
@@ -75,13 +75,14 @@ public class BinarySearch {
         int[] arr = new int[] {1, 3, 5, 7};
         System.out.println(Arrays.toString(arr));
         System.out.println("floor 6:" + (binarySearchFloor(arr, 6) == 2));
-        System.out.println("floor 0:" + (binarySearchFloor(arr, 0) == 0));
+        System.out.println("floor 0:" + (binarySearchFloor(arr, 0) == -1));
         System.out.println("floor 4:" + (binarySearchFloor(arr, 4) == 1));
         System.out.println("floor 2:" + (binarySearchFloor(arr, 2) == 0));
 
         System.out.println("ceil 0:" + (binarySearchCeil(arr, 0) == 0));
         System.out.println("ceil 6:" + (binarySearchCeil(arr, 6) == 3));
         System.out.println("ceil 2:" + (binarySearchCeil(arr, 2) == 1));
+        System.out.println("ceil 8:" + (binarySearchCeil(arr, 8) == -1));
 
         System.out.println("Binary 1:" + (binarySearch(arr, 1) == 0));
         System.out.println("Binary 3:" + (binarySearch(arr, 3) == 1));
