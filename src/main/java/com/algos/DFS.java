@@ -9,14 +9,14 @@ import java.util.Set;
 
 public class DFS {
 
-    private static void dfs(Map<Integer, List<Integer>> graph, int i, Set<Integer> visited) {
+    private static void dfs(Map<Integer, List<Integer>> graph, int root, Set<Integer> visited) {
 
-        List<Integer> neighbors = graph.get(i);
-        if (visited.contains(i) || neighbors == null) {
+        List<Integer> neighbors = graph.get(root);
+        if (visited.contains(root) || neighbors == null) {
             return;
         }
-        System.out.print(i + ", ");
-        visited.add(i);
+        System.out.print(root + ", ");
+        visited.add(root);
 
         for (int neighbor : neighbors) {
             dfs(graph, neighbor, visited);
