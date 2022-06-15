@@ -18,8 +18,8 @@ public class Dijkstras {
             if (visited.containsKey(currentPair.label)) continue;
             visited.put(currentPair.label, currentPair.dist);
             
-            for (int neighbor : graph.get(currentPair.label).keySet()) {
-                minHeap.offer(new Node(neighbor, currentPair.dist + graph.get(currentPair.label).get(neighbor)));
+            for (Map.Entry<Integer, Integer> neighbor : graph.get(currentPair.label).entrySet()) {
+                minHeap.offer(new Node(neighbor.getKey(), currentPair.dist + neighbor.getValue()));
             }
         }
         return visited;
