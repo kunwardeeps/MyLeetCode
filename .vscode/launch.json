@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MinimizeKeypadClicks",
+            "request": "launch",
+            "mainClass": "com.amazon.MinimizeKeypadClicks",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxDiscountPairs",
+            "request": "launch",
+            "mainClass": "com.amazon.MaxDiscountPairs",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
             "name": "Launch DP",
             "request": "launch",
             "mainClass": "com.algos.DP",

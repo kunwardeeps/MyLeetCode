@@ -3,6 +3,9 @@ package com.amazon;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * https://leetcode.com/discuss/interview-question/2420723/Amazon-OA-question-2
+ */
 public class GoodWaysToSplit {
     public static void main(String[] args) {
 
