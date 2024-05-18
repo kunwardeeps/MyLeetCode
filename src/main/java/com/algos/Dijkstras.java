@@ -7,22 +7,7 @@ import java.util.PriorityQueue;
 public class Dijkstras {
     
     public static Map<Integer, Integer> dijkstra(Map<Integer, Map<Integer, Integer>> graph, int source) {
-
-        PriorityQueue<Node> minHeap = new PriorityQueue<>((p1,p2) -> p1.dist - p2.dist);
-        minHeap.offer(new Node(source, 0));
-        Map<Integer, Integer> visited = new HashMap<>(); // track visited as well as final min dist
-        
-        while (!minHeap.isEmpty()) {
-            Node currentPair = minHeap.poll(); //get the unvisited node with min distance
-            
-            if (visited.containsKey(currentPair.label)) continue;
-            visited.put(currentPair.label, currentPair.dist);
-            
-            for (Map.Entry<Integer, Integer> neighbor : graph.get(currentPair.label).entrySet()) {
-                minHeap.offer(new Node(neighbor.getKey(), currentPair.dist + neighbor.getValue()));
-            }
-        }
-        return visited;
+        return null;
     }
 
     /** https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/

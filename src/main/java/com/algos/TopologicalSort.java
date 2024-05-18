@@ -9,24 +9,7 @@ import java.util.Map;
 public class TopologicalSort {
 
     public static List<Integer> topologicalSort(Map<Integer, Integer> inDegree, Map<Integer, List<Integer>> graph) {
-        List<Integer> res = new ArrayList<>();
-        while (!inDegree.isEmpty()) {
-            boolean noLoop = false;
-            for (int key : inDegree.keySet()) { // find nodes with 0 indegree
-                if (inDegree.get(key) == 0) {
-                    res.add(key);
-                    List<Integer> children = graph.get(key);
-                    for (int child : children)
-                        inDegree.put(child, inDegree.get(child) - 1);
-                    inDegree.remove(key); // remove the current node with 0 degree and start over
-                    noLoop = true;
-                    break;
-                }
-            }
-            if (!noLoop) // there is a loop --> All Indegree are not 0
-                return new ArrayList<>();
-        }
-        return res;
+        return null;
     }
 
     /**

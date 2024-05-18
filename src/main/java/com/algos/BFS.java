@@ -13,26 +13,6 @@ public class BFS {
 
 
     private static void bfs(Map<Integer, List<Integer>> graph, int startNode) {
-        Set<Integer> visited = new HashSet<>();
-        Queue<Integer> queue = new LinkedList<Integer>(); 
-        visited.add(1);
-        queue.add(1);
-
-        while (!queue.isEmpty()) {
-            int node = queue.poll();
-            System.out.print(node + ", ");
-
-            List<Integer> neighbors = graph.get(node);
-            if (neighbors == null || neighbors.isEmpty()) continue;
-
-            for (int n : neighbors) {
-                if (!visited.contains(n)) {
-                    visited.add(n);
-                    queue.add(n);
-                }
-            }
-        }
-
     }
 
     /**          

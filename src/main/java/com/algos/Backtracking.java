@@ -11,20 +11,10 @@ import java.util.List;
 public class Backtracking {
 
     public static List<List<Integer>> permute(List<Integer> nums) {
-        List<List<Integer>> output = new ArrayList<>();
-        permute(nums, output, 0);
-        return output;
+        return null;
     }
 
     public static void permute(List<Integer> nums, List<List<Integer>> output, int first) {
-        int n = nums.size();
-        if (first == n)
-            output.add(new ArrayList<Integer>(nums));
-        for (int i = first; i < n; i++) {
-            Collections.swap(nums, first, i);
-            permute(nums, output, first + 1);
-            Collections.swap(nums, first, i);
-        }
     }
 
     public static void main(String[] args) {

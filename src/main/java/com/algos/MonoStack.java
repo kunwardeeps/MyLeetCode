@@ -6,35 +6,11 @@ import java.util.Stack;
 public class MonoStack {
 
     public static int[] nle(int[] A) {
-        Stack<Integer> stack = new Stack<>();
-        int[] nle = new int[A.length];
-        Arrays.fill(nle, -1);
-
-        for (int i = 0; i < A.length; i++) {
-            while (!stack.empty() && A[stack.peek()] > A[i]) {
-                int x = stack.pop();
-                nle[x] = i;
-            }
-            stack.push(i);
-        }
-
-        return nle;
+        return null;
     }
 
     public static int[] ple(int[] A) {
-        Stack<Integer> stack = new Stack<>();
-        int[] ple = new int[A.length];
-        Arrays.fill(ple, -1);
-
-        for (int i = 0; i < A.length; i++) {
-            while (!stack.empty() && A[stack.peek()] > A[i]) {
-                stack.pop();
-            }
-            ple[i] = stack.empty() ? -1 : stack.peek();
-            stack.push(i);
-        }
-
-        return ple;
+        return null;
     }
 
     public static void main(String[] args) {
