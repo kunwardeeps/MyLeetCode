@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SimilarPassword",
+            "request": "launch",
+            "mainClass": "com.amazon.SimilarPassword",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkedListReverse",
+            "request": "launch",
+            "mainClass": "com.algos.LinkedListReverse",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
             "name": "Launch MinimizeKeypadClicks",
             "request": "launch",
             "mainClass": "com.amazon.MinimizeKeypadClicks",
