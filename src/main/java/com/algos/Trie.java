@@ -1,9 +1,12 @@
 package com.algos;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Trie {
     public class TrieNode {
-        public TrieNode[] children = new TrieNode[26];
-        public String item = "";
+        public Map<Character, TrieNode> children = new HashMap<Character, TrieNode>(); 
+        public boolean isWord = false;
     }
     
     private TrieNode root = new TrieNode();
@@ -11,12 +14,9 @@ public class Trie {
     public void addWord(String word) {
         TrieNode node = root;
         for (char c : word.toCharArray()) {
-            if (node.children[c - 'a'] == null) {
-                node.children[c - 'a'] = new TrieNode();
-            }
-            node = node.children[c - 'a'];
+            node = node.children.computeIfAbsent(c, k -> new TrieNode());
         }
-        node.item = word;
+        node.isWord = true;
     }
 
     public boolean search(String word) {
@@ -24,15 +24,13 @@ public class Trie {
     }
     
     private boolean match(char[] chs, int k, TrieNode node) {
-        if (k == chs.length) return !node.item.equals("");   
+        if (k == chs.length) return node.isWord;   
         if (chs[k] != '.') {
-            return node.children[chs[k] - 'a'] != null && match(chs, k + 1, node.children[chs[k] - 'a']);
+            return node.children.containsKey(chs[k]) && match(chs, k + 1, node.children.get(chs[k]));
         } else {
-            for (int i = 0; i < node.children.length; i++) {
-                if (node.children[i] != null) {
-                    if (match(chs, k + 1, node.children[i])) {
-                        return true;
-                    }
+            for (Map.Entry<Character, TrieNode> entry : node.children.entrySet()) {
+                if (match(chs, k + 1, entry.getValue())) {
+                    return true;
                 }
             }
         }
@@ -43,6 +41,7 @@ public class Trie {
         Trie t = new Trie();
         t.addWord("word");
         t.addWord("hello");
+        System.out.println(t.search("wo..") == true);
         System.out.println(t.search("word") == true);
         System.out.println(t.search("hello") == true);
         System.out.println(t.search("abc") == false);
