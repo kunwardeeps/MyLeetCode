@@ -1,17 +1,19 @@
 package com.algos;
 
+import java.util.ArrayDeque;
 import java.util.Arrays;
+import java.util.Deque;
 import java.util.Stack;
 
 public class MonoStack {
 
     public static int[] nle(int[] A) {
-        Stack<Integer> stack = new Stack<>();
+        Deque<Integer> stack = new ArrayDeque<>();
         int[] nle = new int[A.length];
         Arrays.fill(nle, -1);
 
         for (int i = 0; i < A.length; i++) {
-            while (!stack.empty() && A[stack.peek()] > A[i]) {
+            while (!stack.isEmpty() && A[stack.peek()] > A[i]) {
                 int x = stack.pop();
                 nle[x] = i;
             }

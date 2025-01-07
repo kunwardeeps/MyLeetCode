@@ -36,6 +36,24 @@ public class QuickSort {
 
     }
 
+    // quick select
+    public int findKthLargest(int[] nums, int k) {
+        k = nums.length - k;
+        int lo = 0;
+        int hi = nums.length - 1;
+        while (lo < hi) {
+            final int pivot = partition(nums, lo, hi);
+            if(pivot < k) {
+                lo = pivot + 1;
+            } else if (pivot > k) {
+                hi = pivot - 1;
+            } else {
+                break;
+            }
+        }
+        return nums[k];
+     }     
+
     private static int partition(int[] a, int l, int r) {
         int pivot = a[r];
         int i = l - 1;
