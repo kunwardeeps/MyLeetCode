@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TopologicalSortDFS",
+            "request": "launch",
+            "mainClass": "com.algos.TopologicalSortDFS",
+            "projectName": "my-leetcode"
+        },
+        {
+            "type": "java",
             "name": "Launch SimilarPassword",
             "request": "launch",
             "mainClass": "com.amazon.SimilarPassword",
